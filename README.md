@@ -2,7 +2,7 @@
 zip json's key for smaller size transfer,and restore it as javascript var after decode it!
 
 # expland
-var -> json -> yson ->json -> var
+object -> json -> yson ->json -> object
 
 
 # Example
