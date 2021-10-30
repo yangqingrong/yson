@@ -7,29 +7,31 @@ json -> yson ->json
 
 # Example
 ```javascript
- var data = {
-                code :1,
-                msg :'ok',
-                data:[
+            var data = {
+                code: 1,
+                msg: 'ok',
+                data: [
                     {
-                        id : 1,
-                        name :'yqr',
-                        age:37
+                        id: 1,
+                        name: 'yqr',
+                        age: 37
                     },
                     {
-                        id : 2,
-                        name :'hi',
-                        age:130
+                        id: 2,
+                        name: 'hi',
+                        age: 130
                     }
                 ]
             };
+
             console.log('------encode data to yson and keys--------')
-            var r  = yson_encode( data );
-            console.log('yson:',r.yson);
-            console.log('keys:',r.keys);
-             console.log('------decode yson with keys--------')
-            var data2 = yson_decode( r.yson , r.keys );
-            console.log('data2:',data2);
+            var r = yson_encode(data);
+            console.log('yson:', r.yson);
+            console.log('keys:', r.keys);
+
+            console.log('------decode yson with keys--------')
+            var data2 = yson_decode(r.yson, r.keys);
+            console.log('data2:', data2);
 ```
 # output
 ```console
