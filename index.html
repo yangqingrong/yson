@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <script src="yson.js"></script>
+        <script  >
+            var data = {
+                code: 1,
+                msg: 'ok',
+                data: [
+                    {
+                        id: 1,
+                        name: 'yqr',
+                        age: 37
+                    },
+                    {
+                        id: 2,
+                        name: 'hi',
+                        age: 130
+                    }
+                ]
+            };
+
+            console.log('------encode data to yson and keys--------')
+            var r = yson_encode(data);
+            console.log('yson:', r.yson);
+            console.log('keys:', r.keys);
+
+            console.log('------decode yson with keys--------')
+            var data2 = yson_decode(r.yson, r.keys);
+            console.log('data2:', data2);
+        </script>
+    </body>
+</html>
