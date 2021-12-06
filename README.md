@@ -1,8 +1,8 @@
 # yson
-zip json's key for smaller size transfer,and restore it as json format after receive it
+zip json's key for smaller size transfer,and restore it as javascript var after decode it!
 
 # expland
-json -> yson ->json
+object -> json -> yson ->json -> object
 
 
 # Example
